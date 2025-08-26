@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Payment Processing Software, Outsourced Payment Application Software Development, Payment Device Integration" />
+    <meta name="keywords" content="Payment processing, payment terminals, payment devices, payment solution testing, POS, POS Integation" />
+    <meta name="author" content="CIG" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Processing Software | Outsourced Payment Application Software Development | Payment Device Integration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            color: #161616;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            /* Remove white background since header is now white */
+            margin-right: 8px;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #161616;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #161616;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #0f62fe;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0f62fe 0%, #002d9c 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff05" points="0,1000 1000,0 1000,1000"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            background: #da1e28;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        .cta-button:hover {
+            background: #b81921;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(218,30,40,0.3);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f4f4f4;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #161616;
+            font-weight: 600;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #0f62fe;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #161616;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #525252;
+            line-height: 1.7;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #525252;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 2rem;
+            background: #0f62fe;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: #161616;
+            color: white;
+        }
+
+        .contact-content {
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #262626;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #393939;
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* Footer */
+        footer {
+            background: #000000;
+            color: #c6c6c6;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .logo img {
+                height: 32px;
+            }
+
+            .logo-text {
+                font-size: 1.4rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .service-card {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="https://www.cigworks.com/images/cig100.png" alt="CIG Solutions Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Accelerate Your Payment Solutions</h1>
+                <p>Reduce development costs and launch faster with a proven payments technology partner.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Strategic Development Solutions</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #525252; margin-bottom: 4rem;">Purpose-built capabilities to accelerate time-to-market for payment processors, efficiently and within budget.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Rapid Product Development</h3>
+                    <p><strong>Business Impact:</strong><br> Launch new payment solutions faster than in-house development allows. When opportunities emerge, we work with your team to commercialize viable product ideas while your competitors are still drafting specifications. For over more than twenty years, everyday we continue to fine-tune and improve our process of guiding products from concept to deployment, eliminating months of foundational work, securing your first-mover advantage and accelerating your ROI</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Enterprise Device Integration</h3>
+                    <p><strong>Unify the Payment Experience:</strong><br> Navigate the complex landscape of payment hardware and digital wallets with a single, seamless integration. We provide expert integration across the entire ecosystem—from <strong>traditional POS terminals</strong> (including VeriFone, PAX, Ingenico, Dejavoo) to <strong>modern smartphone-based solutions (Apple Pay, Google Wallet, Samsung Pay)</strong>. We partner with you to rapidly extend your cardholder offerings to any device, ensuring a consistent and secure experience everywhere your customers are.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>PCI-Compliant API Development</h3>
+                    <p><strong>PCI-Compliant API Development:</strong><br> Turn payments into a competitive advantage with our developer-first APIs. We provide a single, secure integration for <strong>Credit, Debit, EBT, and ACH processing</strong>, complete with full transaction lifecycle management.
+
+<br><li><strong>Unified Payments API:</strong> Accept all major payment methods through one simple integration.
+
+<br><li><strong>End-to-End Lifecycle:</strong> Manage every transaction from authorization to settlement.
+
+<br><li><strong>Built-In PCI Compliance</strong>: Security is engineered into every layer, reducing your scope and risk.
+
+Launch faster, build smarter, and stay secure.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Mission-Critical Testing</h3>
+                    <p><strong>Our Commitment to Quality:</strong><br> Protect your reputation with comprehensive testing that covers every transaction scenario. Our payment-specific testing methodology has delivered robust and resilient products for 20 years. Avoid costly production issues that can damage processor relationships and customer trust.</p>
+                </div>
+            </div>
+
+            <!-- Client Types Section -->
+            <div style="margin-top: 5rem;">
+                <h3 style="text-align: center; font-size: 2rem; color: #161616; margin-bottom: 3rem; font-weight: 600;">Client Partnership Models</h3>
+                <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div class="service-card" style="border-left-color: #da1e28;">
+                        <h4 style="color: #161616; font-weight: 600; margin-bottom: 1rem;">Payment Software Vendors</h4>
+                        <p><strong>Strategic Advantage:</strong> Scale your development capacity without hiring headaches. We become your extended team, delivering enterprise-grade products while you maintain focus on sales and strategy. Perfect for building comprehensive product portfolios that capture larger market share.</p>
+                    </div>
+
+                    <div class="service-card" style="border-left-color: #da1e28;">
+                        <h4 style="color: #161616; font-weight: 600; margin-bottom: 1rem;">System Integrators</h4>
+                        <p><strong>Accelerate time-to-market:</strong>For System Integrators, value is created by seamlessly unifying complex systems. We empower you to rapidly embed payment acceptance—including credit, debit, and ACH—into your web and mobile applications. Our approach accelerates your time-to-market, reduces development costs, and provides dedicated technical support to ensure your integrations are successful.</p>
+                    </div>
+
+                    <div class="service-card" style="border-left-color: #da1e28;">
+                        <h4 style="color: #161616; font-weight: 600; margin-bottom: 1rem;">Enterprise Merchants</h4>
+                        <p><strong>Cost Optimization:</strong> Move beyond one-size-fits-all systems. Our custom payment solutions are engineered to directly enhance your bottom line by optimizing your entire payment operation. By focusing exclusively on payments, we deliver a faster return on investment and greater long-term value than general IT service providers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Why Payment Leaders Choose CIG Solutions</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p style="font-size: 1.3rem; color: #161616; font-weight: 500; margin-bottom: 2rem;">20 years of exclusive focus on payment processing technology. Zero dilution. Maximum expertise.</p>
+                    
+                    <p style="margin-bottom: 1.5rem;"><strong>Founded in 2004</strong> to serve one of the world's leading payment solutions providers, we've never deviated from our core mission: delivering flawless payment technology that drives business results. While other vendors chase trends, we've deepened our payments expertise year after year.</p>
+                    
+                    <p style="margin-bottom: 2rem;"><strong>Proven Track Record:</strong> Our engagement model has consistently delivered on-schedule, robust payment products that generate substantial cost savings. We don't just build software – we build competitive advantages that translate directly to market position and profitability.</p>
+
+                    <div style="background: #f4f4f4; padding: 2rem; border-radius: 8px; border-left: 4px solid #0f62fe;">
+                        <h3 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">The CIG Advantage: Domain Expertise at Scale</h3>
+                        <p style="margin-bottom: 1rem;"><strong>We eliminate learning curves.</strong></p>
+                        <p>Unlike generalist IT providers who need months to understand payment processing nuances, we hit the ground running on day one. Our exclusive focus means faster delivery, fewer revisions, and solutions architected with deep industry knowledge. This translates to reduced project risk and accelerated ROI.</p>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">2004</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">PCI-DSS</span>
+                        <span class="stat-label">Compliant Solutions</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Payments Focus</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Competencies -->
+            <div style="margin-top: 5rem;">
+                <h3 style="text-align: center; font-size: 2rem; color: #161616; margin-bottom: 3rem; font-weight: 600;">Strategic Capabilities That Drive Results</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="background: #0f62fe; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">1</div>
+                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Accelerated Development</h4>
+                        <p style="color: #525252; font-size: 0.95rem;">Mature product delivery processes reduce development cycles significantly</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="background: #0f62fe; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">2</div>
+                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Risk Mitigation</h4>
+                        <p style="color: #525252; font-size: 0.95rem;">20-year track record of robust quality protects your brand and processor relationships</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="background: #0f62fe; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">3</div>
+                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Compliance Expertise</h4>
+                        <p style="color: #525252; font-size: 0.95rem;">PCI-DSS compliance and processor certification support eliminate regulatory delays</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="background: #0f62fe; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">4</div>
+                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Strategic Partnership</h4>
+                        <p style="color: #525252; font-size: 0.95rem;">Long-term support model ensures your solutions evolve with market demands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title" style="color: white;">Ready to Accelerate Your Payments Strategy?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Join industry leaders who've reduced development costs and accelerated time-to-market with our proven payment technology expertise.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +91-40-40160581
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <div>
+                            <strong>Email</strong><br>
+                            info@cigworks.com
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <div>
+                            <strong>Location</strong><br>
+                            27 Akash Enclave,<br>
+                            PO JJ Nagar,<br>
+                            Secunderabad,<br>
+                            Telangana<br>
+                            INDIA - 500 087
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CIG Solutions Private Limited. All rights reserved. | Trusted Payment Technology Partner Since 2004 | Robust Payment Solutions</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to service cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards
+        document.querySelectorAll('.service-card').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'white';
+                header.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
