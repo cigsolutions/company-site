@@ -2,11 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Payment Processing Software, Outsourced Payment Application Software Development, Payment Device Integration" />
-    <meta name="keywords" content="Payment processing, payment terminals, payment devices, payment solution testing, POS, POS Integation" />
-    <meta name="author" content="CIG" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Processing Software | Outsourced Payment Application Software Development | Payment Device Integration</title>
+    <title>CIG Solutions | Boutique Payment Technology Partner for US Payment Solutions Providers</title>
     <style>
         * {
             margin: 0;
@@ -54,7 +51,6 @@
         .logo img {
             height: 40px;
             width: auto;
-            /* Remove white background since header is now white */
             margin-right: 8px;
         }
 
@@ -120,6 +116,19 @@
             opacity: 0.9;
         }
 
+        .boutique-badge {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
         .cta-button {
             background: #da1e28;
             color: white;
@@ -138,6 +147,39 @@
             background: #b81921;
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(218,30,40,0.3);
+        }
+
+        /* Tenure Highlight Section */
+        .tenure-highlight {
+            background: #002d9c;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .tenure-stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .tenure-stat {
+            text-align: center;
+        }
+
+        .tenure-number {
+            font-size: 3rem;
+            font-weight: bold;
+            display: block;
+            color: #ffffff;
+        }
+
+        .tenure-label {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
         }
 
         /* Services Section */
@@ -274,6 +316,42 @@
             padding: 2rem 0;
         }
 
+        /* Boutique Highlight */
+        .boutique-section {
+            background: linear-gradient(135deg, #002d9c 0%, #0f62fe 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .boutique-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .boutique-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .boutique-icon {
+            width: 48px;
+            height: 48px;
+            background: #da1e28;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
@@ -304,6 +382,18 @@
             .contact-info {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .boutique-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tenure-stats {
+                gap: 2rem;
+            }
+
+            .tenure-number {
+                font-size: 2.5rem;
             }
         }
 
@@ -348,9 +438,67 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content fade-in">
-                <h1>Accelerate Your Payment Solutions</h1>
-                <p>Reduce development costs and launch faster with a proven payments technology partner.</p>
+                <div class="boutique-badge">🏆 Boutique Payment Technology Partner</div>
+                <h1>US Payments Industry Specialists</h1>
+                <p>CIG Solutions is a boutique IT services company exclusively focused on the US Payment Processing Industry. We have deep industry knowledge, regulatory expertise, and proven long-term partnerships since 2004.</p>
+                <a href="#contact" class="cta-button">Start Your Long-Term Partnership</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Tenure Highlight -->
+    <section class="tenure-highlight">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem; font-weight: 600;">Built for the Long Term</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">While others chase short-term projects, at CIG we build lasting partnerships that span decades</p>
+            
+            <div class="tenure-stats">
+                <div class="tenure-stat">
+                    <span class="tenure-number">16+ Years</span>
+                    <div class="tenure-label">Longest Running Client Engagement<br> (2009 - present)</div>
+                </div>
+                <div class="tenure-stat">
+                    <span class="tenure-number">10+ Years</span>
+                    <div class="tenure-label">Average Client Engagement</div>
+                </div>
+                <div class="tenure-stat">
+                    <span class="tenure-number">100%</span>
+                    <div class="tenure-label">Client retention<br>since 2018</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boutique Advantage Section -->
+    <section class="boutique-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: 600;">The Long-Term Partnership Advantage</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 3rem; opacity: 0.9;">Why US payment industry leaders choose enduring relationships over project-based providers</p>
+            
+            <div class="boutique-grid">
+                <div class="boutique-card">
+                    <div class="boutique-icon">🎯</div>
+                    <h3 style="margin-bottom: 1rem; font-weight: 600;">Deep Business Understanding</h3>
+                    <p>After multiple years of working together, we know your business better than your own teams. We understand your processes, pain points, and growth trajectory, delivering solutions that truly fit your long-term vision.</p>
+                </div>
+                
+                <div class="boutique-card">
+                    <div class="boutique-icon">🇺🇸</div>
+                    <h3 style="margin-bottom: 1rem; font-weight: 600;">Evolving US Market Mastery</h3>
+                    <p>16+ years with our longest client means we've navigated every major US payment industry evolution together, from EMV to real-time payments to mobile payments to emerging fintech trends.</p>
+                </div>
+                
+                <div class="boutique-card">
+                    <div class="boutique-icon">⚡</div>
+                    <h3 style="margin-bottom: 1rem; font-weight: 600;">Institutional Knowledge Retention</h3>
+                    <p>Unlike project-based providers, our multi-year partnerships mean zero knowledge loss. Every lesson learned, every optimization discovered, every edge case handled becomes part of your institutional advantage.</p>
+                </div>
+                
+                <div class="boutique-card">
+                    <div class="boutique-icon">🤝</div>
+                    <h3 style="margin-bottom: 1rem; font-weight: 600;">Strategic Partnership Investment</h3>
+                    <p>When clients stay over multiple years, we invest differently. We become stakeholders in your success, not just vendors executing tasks. This long-term view drives innovation and continuous improvement.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -358,56 +506,48 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Strategic Development Solutions</h2>
-            <p style="text-align: center; font-size: 1.2rem; color: #525252; margin-bottom: 4rem;">Purpose-built capabilities to accelerate time-to-market for payment processors, efficiently and within budget.</p>
+            <h2 class="section-title">US Payment-Focused Solutions</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #525252; margin-bottom: 4rem;">Specialized capabilities refined through decades of partnership, not months of discovery</p>
             
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Rapid Product Development</h3>
-                    <p><strong>Business Impact:</strong><br> Launch new payment solutions faster than in-house development allows. When opportunities emerge, we work with your team to commercialize viable product ideas while your competitors are still drafting specifications. For over more than twenty years, everyday we continue to fine-tune and improve our process of guiding products from concept to deployment, eliminating months of foundational work, securing your first-mover advantage and accelerating your ROI</p>
+                    <h3>US Payment Product Evolution</h3>
+                    <p><strong>Long-Term Partnership Advantage:</strong> We don't just build payment products; we evolve them alongside your business. Our longest partnership spans the entire modern US payments era, from legacy dial-up systems to cutting-edge fintech solutions. This continuity means every enhancement builds on deep institutional knowledge.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Enterprise Device Integration</h3>
-                    <p><strong>Unify the Payment Experience:</strong><br> Navigate the complex landscape of payment hardware and digital wallets with a single, seamless integration. We provide expert integration across the entire ecosystem—from <strong>traditional POS terminals</strong> (including VeriFone, PAX, Ingenico, Dejavoo) to <strong>modern smartphone-based solutions (Apple Pay, Google Wallet, Samsung Pay)</strong>. We partner with you to rapidly extend your cardholder offerings to any device, ensuring a consistent and secure experience everywhere your customers are.</p>
+                    <h3>Strategic US Processor Relationships</h3>
+                    <p><strong>Multi-Year Integration Mastery:</strong> After years of partnership, we've built and optimized integrations with every major US processor through multiple API versions and requirement changes. Our clients benefit from this accumulated expertise and established relationships.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>PCI-Compliant API Development</h3>
-                    <p><strong>PCI-Compliant API Development:</strong><br> Turn payments into a competitive advantage with our developer-first APIs. We provide a single, secure integration for <strong>Credit, Debit, EBT, and ACH processing</strong>, complete with full transaction lifecycle management.
-
-<br><li><strong>Unified Payments API:</strong> Accept all major payment methods through one simple integration.
-
-<br><li><strong>End-to-End Lifecycle:</strong> Manage every transaction from authorization to settlement.
-
-<br><li><strong>Built-In PCI Compliance</strong>: Security is engineered into every layer, reducing your scope and risk.
-
-Launch faster, build smarter, and stay secure.</p>
+                    <h3>Compliance Evolution Management</h3>
+                    <p><strong>Long-Term Regulatory Navigation:</strong> We've guided our partners through every major US payment regulation change since 2004. From PCI-DSS updates to state-level requirements. Our long-term partnerships ensure continuous compliance without disruption.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Mission-Critical Testing</h3>
-                    <p><strong>Our Commitment to Quality:</strong><br> Protect your reputation with comprehensive testing that covers every transaction scenario. Our payment-specific testing methodology has delivered robust and resilient products for 20 years. Avoid costly production issues that can damage processor relationships and customer trust.</p>
+                    <h3>Strategic Technology Roadmapping</h3>
+                    <p><strong>Multi-Decade Vision:</strong> Long-Term partnerships enable true strategic planning. We help clients navigate technology decisions with a long-term view, ensuring today's implementations support tomorrow's growth in the evolving US payments landscape.</p>
                 </div>
             </div>
 
-            <!-- Client Types Section -->
+            <!-- Long-term Partnership Models -->
             <div style="margin-top: 5rem;">
-                <h3 style="text-align: center; font-size: 2rem; color: #161616; margin-bottom: 3rem; font-weight: 600;">Client Partnership Models</h3>
+                <h3 style="text-align: center; font-size: 2rem; color: #161616; margin-bottom: 3rem; font-weight: 600;">Partnership Models That Last</h3>
                 <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
                     <div class="service-card" style="border-left-color: #da1e28;">
-                        <h4 style="color: #161616; font-weight: 600; margin-bottom: 1rem;">Payment Software Vendors</h4>
-                        <p><strong>Strategic Advantage:</strong> Scale your development capacity without hiring headaches. We become your extended team, delivering enterprise-grade products while you maintain focus on sales and strategy. Perfect for building comprehensive product portfolios that capture larger market share.</p>
+                        <h4 style="color: #161616; font-weight: 600; margin-bottom: 1rem;">Strategic Technology Partnerships</h4>
+                        <p><strong>Multi-Year Engagements:</strong> Become a true extension of your organization with dedicated teams that grow with your business. Our longest client partnership began in 2009 and continues to drive innovation today. Perfect for payment companies seeking stable, long-term technology advancement.</p>
                     </div>
 
                     <div class="service-card" style="border-left-color: #da1e28;">
-                        <h4 style="color: #161616; font-weight: 600; margin-bottom: 1rem;">System Integrators</h4>
-                        <p><strong>Accelerate time-to-market:</strong>For System Integrators, value is created by seamlessly unifying complex systems. We empower you to rapidly embed payment acceptance—including credit, debit, and ACH—into your web and mobile applications. Our approach accelerates your time-to-market, reduces development costs, and provides dedicated technical support to ensure your integrations are successful.</p>
+                        <h4 style="color: #161616; font-weight: 600; margin-bottom: 1rem;">Evolution-Ready Integrations</h4>
+                        <p><strong>Multi-Year Integration Mastery:</strong> Partnerships spanning regulatory changes, processor updates, and market evolution. We've navigated every major US payment industry transformation with our clients ensuring continuity through change.</p>
                     </div>
 
                     <div class="service-card" style="border-left-color: #da1e28;">
-                        <h4 style="color: #161616; font-weight: 600; margin-bottom: 1rem;">Enterprise Merchants</h4>
-                        <p><strong>Cost Optimization:</strong> Move beyond one-size-fits-all systems. Our custom payment solutions are engineered to directly enhance your bottom line by optimizing your entire payment operation. By focusing exclusively on payments, we deliver a faster return on investment and greater long-term value than general IT service providers.</p>
+                        <h4 style="color: #161616; font-weight: 600; margin-bottom: 1rem;">Institutional Knowledge Partnerships</h4>
+                        <p><strong>Deep Business Integration:</strong> After years of partnership, we know your business architecture, compliance requirements, and growth trajectory. This institutional knowledge translates to faster delivery and strategic recommendations that truly fit your vision.</p>
                     </div>
                 </div>
             </div>
@@ -417,20 +557,20 @@ Launch faster, build smarter, and stay secure.</p>
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Why Payment Leaders Choose CIG Solutions</h2>
+            <h2 class="section-title">Built for Enduring Partnerships Since 2004</h2>
             
             <div class="about-content">
                 <div class="about-text">
-                    <p style="font-size: 1.3rem; color: #161616; font-weight: 500; margin-bottom: 2rem;">20+ years of singular focus on payment processing technology. Deep domain expertise.</p>
+                    <p style="font-size: 1.3rem; color: #161616; font-weight: 500; margin-bottom: 2rem;">The boutique IT services company built for decades-long partnerships with payment solution providers.</p>
                     
-                    <p style="margin-bottom: 1.5rem;"><strong>Founded in 2004</strong> to serve one of the world's leading payment solutions providers, we've never deviated from our core mission: delivering flawless payment technology that drives business results. While other vendors chase trends, we've deepened our payments expertise year after year.</p>
+                    <p style="margin-bottom: 1.5rem;"><strong>Proven Long-Term Success:</strong> Our client relationships average 10+ years, with our longest partnership spanning over 16 years since 2009. This isn't just about project delivery, it's about growing together through every evolution of the US payments landscape.</p>
                     
-                    <p style="margin-bottom: 2rem;"><strong>Proven Track Record:</strong> Our engagement model has consistently delivered on-schedule, robust payment products that generate substantial cost savings. We don't just build software – we build competitive advantages that translate directly to market position and profitability.</p>
+                    <p style="margin-bottom: 2rem;"><strong>Partnership Over Projects:</strong> While others chase quarterly contracts, we build multi-decade relationships. Our shortest ongoing engagement started in 2018, proving that our value compounds over time. Clients don't just hire us, they invest in us as strategic partners.</p>
 
                     <div style="background: #f4f4f4; padding: 2rem; border-radius: 8px; border-left: 4px solid #0f62fe;">
-                        <h3 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">The CIG Advantage: Domain Expertise at Scale</h3>
-                        <p style="margin-bottom: 1rem;"><strong>We eliminate learning curves.</strong></p>
-                        <p>Unlike generalist IT providers who need months to understand payment processing nuances, we hit the ground running on day one. Our exclusive focus means faster delivery, fewer revisions, and solutions architected with deep industry knowledge. This translates to reduced project risk and accelerated ROI.</p>
+                        <h3 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Why Long-Term Partnerships Win</h3>
+                        <p style="margin-bottom: 1rem;"><strong>Institutional Knowledge == Competitive Advantage</strong></p>
+                        <p>Every year of partnership compounds your advantage. After a couple of years, we know your systems, understand your challenges, and can predict your needs. This deep integration means faster delivery, strategic recommendations, and solutions that fit your business perfectly. Our longest ongoing partnership has evolved through three major payment industry transformations. Now that accumulated wisdom is your competitive edge.</p>
                     </div>
                 </div>
                 
@@ -440,43 +580,43 @@ Launch faster, build smarter, and stay secure.</p>
                         <span class="stat-label">Founded</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">20+</span>
-                        <span class="stat-label">Years Experience</span>
+                        <span class="stat-number">10+ Years</span>
+                        <span class="stat-label">Average Client Engagement</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">PCI-DSS</span>
-                        <span class="stat-label">Compliant Solutions</span>
+                        <span class="stat-number">2009</span>
+                        <span class="stat-label">Longest Ongoing Engagement</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">Payments Focus</span>
+                        <span class="stat-label">Retention Rate since 2018</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Key Competencies -->
+            <!-- Long-term Value Propositions -->
             <div style="margin-top: 5rem;">
-                <h3 style="text-align: center; font-size: 2rem; color: #161616; margin-bottom: 3rem; font-weight: 600;">Strategic Capabilities That Drive Results</h3>
+                <h3 style="text-align: center; font-size: 2rem; color: #161616; margin-bottom: 3rem; font-weight: 600;">The Compound Value of Long-Term Partnership</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                     <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
                         <div style="background: #0f62fe; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">1</div>
-                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Accelerated Development</h4>
-                        <p style="color: #525252; font-size: 0.95rem;">Mature product delivery processes reduce development cycles significantly</p>
+                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Short-Term: Foundation</h4>
+                        <p style="color: #525252; font-size: 0.95rem;">Learning your business, building core systems, establishing processes and relationships</p>
                     </div>
                     <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
                         <div style="background: #0f62fe; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">2</div>
-                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Risk Mitigation</h4>
-                        <p style="color: #525252; font-size: 0.95rem;">20-year track record of robust quality protects your brand and processor relationships</p>
+                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Medium-Term: Optimization</h4>
+                        <p style="color: #525252; font-size: 0.95rem;">Deep business understanding drives efficiency gains and strategic enhancements</p>
                     </div>
                     <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
                         <div style="background: #0f62fe; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">3</div>
-                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Compliance Expertise</h4>
-                        <p style="color: #525252; font-size: 0.95rem;">PCI-DSS compliance and processor certification support eliminate regulatory delays</p>
+                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Long-Term: Innovation</h4>
+                        <p style="color: #525252; font-size: 0.95rem;">Institutional knowledge enables predictive solutions and strategic technology leadership</p>
                     </div>
                     <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
                         <div style="background: #0f62fe; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">4</div>
-                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Strategic Partnership</h4>
-                        <p style="color: #525252; font-size: 0.95rem;">Long-term support model ensures your solutions evolve with market demands</p>
+                        <h4 style="color: #161616; margin-bottom: 1rem; font-weight: 600;">Result: Market Leadership</h4>
+                        <p style="color: #525252; font-size: 0.95rem;">Together we become industry leaders, setting standards others follow</p>
                     </div>
                 </div>
             </div>
@@ -487,8 +627,8 @@ Launch faster, build smarter, and stay secure.</p>
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
-                <h2 class="section-title" style="color: white;">Ready to Accelerate Your Payments Strategy?</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Join industry leaders who've reduced development costs and accelerated time-to-market with our proven payment technology expertise.</p>
+                <h2 class="section-title" style="color: white;">Ready for a Partnership That Lasts Decades?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Join payment industry leaders who've trusted us over decades. Experience the compound advantage of true long-term partnership.</p>
                 
                 <div class="contact-info">
                     <div class="contact-item">
@@ -506,7 +646,7 @@ Launch faster, build smarter, and stay secure.</p>
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                         <div>
-                            <strong>Email</strong><br>
+                            <strong>Long-Term Partnership Inquiries</strong><br>
                             info@cigworks.com
                         </div>
                     </div>
@@ -517,11 +657,7 @@ Launch faster, build smarter, and stay secure.</p>
                         </svg>
                         <div>
                             <strong>Location</strong><br>
-                            27 Akash Enclave,<br>
-                            PO JJ Nagar,<br>
-                            Secunderabad,<br>
-                            Telangana<br>
-                            INDIA - 500 087
+                            27, Akash Enclave,<br>PO JJ Nagar,<br>Secunderabad,<br>INDIA - 500 084
                         </div>
                     </div>
                 </div>
@@ -532,7 +668,8 @@ Launch faster, build smarter, and stay secure.</p>
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 CIG Solutions Private Limited. All rights reserved. | Trusted Payment Technology Partner Since 2004 | Robust Payment Solutions</p>
+            <p>&copy; 2025 CIG Solutions. All rights reserved. | Long-Term Payment Technology Partnerships Since 2004</p>
+            <p>CIG Solutions Private Limited | Phone: +91-40-40160581 | Email: info@cigworks.com | 27, Akash Enclave, PO JJ Nagar, Secunderabad, INDIA - 500 084</p>
         </div>
     </footer>
 
@@ -561,33 +698,3 @@ Launch faster, build smarter, and stay secure.</p>
         };
 
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe service cards
-        document.querySelectorAll('.service-card').forEach((card, index) => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-            observer.observe(card);
-        });
-
-        // Header background change on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.backdropFilter = 'blur(10px)';
-            } else {
-                header.style.background = 'white';
-                header.style.backdropFilter = 'none';
-            }
-        });
-    </script>
-</body>
-</html>
